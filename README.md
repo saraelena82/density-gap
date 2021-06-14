@@ -1,2 +1,4 @@
 # density-gap
 Density peaks clustering with gap-based automated center detection
+
+ The program has some options depending on whether the data set is visual (e.g., "shape" data sets such as Aggregation, Spiral, Flame, etc.) or not (e.g. Iris, Ecoli, Wine, etc.). The code displays the number of candidate centers and the number of final centers chosen, and produces some quality metrics, such as F-score and ARI (other metrics such as NMI may be added using the sklearn library). Also, the clustering can be saved in a text file, as well as the centers. If the data set is visual, you can see (or save in .eps) a simple visualization of the result (the program expects a "dpeaks" folder to save these files). There are some requirements on the input files, since the data set along with the ground truth has to be provided, and the visualization so far supports 31 clusters (this number could be increased by adding some modifications into the code).
